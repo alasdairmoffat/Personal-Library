@@ -7,7 +7,7 @@
  */
 
 /* eslint-disable no-underscore-dangle */
-/* global suite test */
+/* global suite test suiteTeardown */
 
 const chaiHttp = require('chai-http');
 const chai = require('chai');
@@ -18,6 +18,10 @@ const server = require('../server');
 chai.use(chaiHttp);
 
 suite('Functional Tests', () => {
+  suiteTeardown(async () => {
+    server.stop();
+  });
+
   /*
    * ----[EXAMPLE TEST]----
    * Each test should completely test the response of the API end-point including response status code!

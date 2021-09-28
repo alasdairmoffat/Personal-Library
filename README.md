@@ -16,7 +16,7 @@
 
 ## Preview
 
-[Glitch](https://alasdairmoffat-personal-library.glitch.me/)
+[alasdairmoffat-stock-price-checker.glitch.me](https://alasdairmoffat-personal-library.glitch.me/)
 
 ## General Info
 
